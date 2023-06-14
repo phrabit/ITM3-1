@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+    <body>
+        <script>
+            
+            // first_num and sec_num should be converted into Integer
+            // In order to compare the value each other!
+            var first_num = parseInt(prompt('first number'));
+            var sec_num = parseInt(prompt('second number'));
+
+            while(1)
+            {
+                // If the previous inserted number is less than latest one
+                // then, alert message comes up to the user
+                // And first_num is incremented by 1.
+                if(first_num < sec_num){
+                    alert(first_num+" is less than "+sec_num);
+                    first_num++; 
+                    
+                // As first_num is incremented until first_num >= sec_num
+                // Then the loop stops.
+                }else{
+                    break;
+                }
+            }
+
+            // Finally I added the result (first_num, sec_num) in the web page.
+            document.write("first number is : "+first_num+" and second number is "+sec_num);
+        </script>
+    </body>
+</html>

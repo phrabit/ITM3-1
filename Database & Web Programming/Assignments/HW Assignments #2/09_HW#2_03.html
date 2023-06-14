@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+    <body>
+        <script>
+            
+            // This getRandom() function can make randomly
+            function getRandom(max){
+                return (Math.floor(Math.random()*max))+1;
+            }
+            
+            // Set the standard value 50
+            var num = 50;
+
+            // Iteration should be 5 as follow.
+            for(var i=0;i<5;i++){
+                
+                // Put the parameter 100, So ran_num can have value from 1 to 100 randomly.
+                var ran_num = getRandom(100);
+                // if randomly selected value is bigger than standard value
+                if(ran_num >= num){
+                    // This alarm message occurs to the user.
+                    alert("Yo, "+ran_num+" is greater than or equal to "+num);
+                // if randomly selected value is less than standard value
+                }else{
+                    // This alarm message occurs to the user.
+                    alert("Hey, "+ran_num+" is less than "+num);
+                }
+            }
+            // It was easy ^^
+            document.write("Q3 is easy- HAHA");
+        
+        </script>
+    </body>
+</html>
